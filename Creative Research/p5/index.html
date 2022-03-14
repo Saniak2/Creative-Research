@@ -5,8 +5,8 @@
     <meta charset="utf-8">
 
   
-    <button class="buttonInstruction">Instructions</button>
-    <button class="buttonStart">Click to Start!</button>
+    <button class="buttonInstruction"> <a href="./Instructions">Instructions</a> </button>
+    <button class="buttonStart"><a href="./StartGame">Click to Start!</a></button>
     <style>
       .buttonInstruction {
         border: none;
@@ -38,23 +38,30 @@
         border: 2px solid #4CAF50;
       }
 
-    
+      .buttonInstruction:hover {
+        background-color: #033d05;
+        color: white;
+      }
 
-.buttonInstruction:hover {
-  background-color: #033d05;
-  color: white;
-}
+      .buttonStart:hover {
+        background-color: #063747;
+        color: white;
+      }
 
-
-.buttonStart:hover {
-  background-color: #063747;
-  color: white;
-}
+      .header {
+        padding: 60px;
+        text-align: center;
+        background: #251abc;
+        color: white;
+        font-size: 30px;
+      }
       </style>
 
 
   </head>
   <body>
     <script src="sketch.js"></script>
-    
+    <div class="header">
+      <h1>Crime Simulation Game</h1>
+    </div>
 </body></html>
