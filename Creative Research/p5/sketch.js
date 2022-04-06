@@ -1,9 +1,8 @@
-function setup() {
-  createCanvas(windowWidth, windowHeight);
-}
+let song;
 
-function draw() {
-   background(20, 40, 60);
-   fill('blue')
-   ellipse(200, 200, 20)
+function preload() {
+  song = loadSound("crimeMusic.mp3");
+}
+function mouseClicked() {
+  song.play();
 }
